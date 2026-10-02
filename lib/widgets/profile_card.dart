@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'stat_box.dart';
 
+/// Thẻ thông tin sinh viên — Card + ListTile + Row/Expanded.
 class ProfileCard extends StatelessWidget {
   const ProfileCard({super.key});
 
@@ -13,8 +15,8 @@ class ProfileCard extends StatelessWidget {
           children: [
             const ListTile(
               leading: CircleAvatar(child: Text('D')),
-              title: Text('Bùi Quang Duy'), // Thay thông tin của bạn
-              subtitle: Text('MSSV: 2201234567'), // Thay MSSV của bạn
+              title: Text('Bùi Quang Duy'),
+              subtitle: Text('MSSV: 231A290127'), 
             ),
             const Divider(height: 1),
             const ListTile(
@@ -25,7 +27,7 @@ class ProfileCard extends StatelessWidget {
             const ListTile(
               leading: Icon(Icons.mail_outline),
               title: Text('Email'),
-              subtitle: Text('2201234567@vhu.edu.vn'), // Thay Email của bạn
+              subtitle: Text('DUY231A290127@edu.vn.com'),
             ),
             Padding(
               padding: const EdgeInsets.fromLTRB(16, 8, 16, 12),
@@ -39,38 +41,6 @@ class ProfileCard extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class StatBox extends StatelessWidget {
-  const StatBox({super.key, required this.label, required this.value});
-
-  final String label;
-  final String value;
-
-  @override
-  Widget build(BuildContext context) {
-    final scheme = Theme.of(context).colorScheme;
-    return Container(
-      padding: const EdgeInsets.symmetric(vertical: 12),
-      decoration: BoxDecoration(
-        color: scheme.surfaceContainerHighest,
-        borderRadius: BorderRadius.circular(12),
-      ),
-      child: Column(
-        children: [
-          Text(
-            value,
-            style: TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.bold,
-              color: scheme.primary,
-            ),
-          ),
-          Text(label, style: TextStyle(fontSize: 12, color: scheme.outline)),
-        ],
       ),
     );
   }
