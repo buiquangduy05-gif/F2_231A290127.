@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:f2_layout/main.dart';
+import 'package:f2_layout/widgets/profile_card.dart';
 
 void main() {
   testWidgets('Kiểm tra giao diện đăng nhập Lab F2', (WidgetTester tester) async {
