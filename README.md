@@ -1,17 +1,5 @@
-# f2_layout
+Các yêu cầu nâng cao đã hoàn thành
 
-A new Flutter project.
+Nâng cao 1 (NC1): Đã thêm chế độ tối (darkTheme). Quản lý trạng thái ThemeMode và tích hợp nút bấm chuyển đổi giữa giao diện Sáng/Tối trực tiếp trên phần ảnh bìa.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Nâng cao 2 (NC2): Đã tái cấu trúc mã nguồn (refactoring). Tách các widget HeaderBanner, ProfileCard, và StatBox ra khỏi main.dart và chuyển vào các file riêng biệt trong thư mục lib/widgets/.
